@@ -19,6 +19,7 @@ def day2(input, part2):
                         chunks = [id_str[j:j+i] for j in range(0, len(id_str), i)]
                         if all(x == chunks[0] for x in chunks):
                             has_at_least_one_double = True
+                            break
                 if has_at_least_one_double:
                     code += id_num
             else:
